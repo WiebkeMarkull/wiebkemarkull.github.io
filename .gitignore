@@ -1,0 +1,10 @@
+# Editor-Backups
+*~
+
+# Office / alte Arbeitsdateien
+*.odt
+*.epub
+*.zip
+
+# Sonstiges
+.DS_Store

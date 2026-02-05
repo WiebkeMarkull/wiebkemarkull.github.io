@@ -1,0 +1,21 @@
+
+/* Custom overrides */
+.highlight {
+    background-color: #eef3f7;
+    padding: 1em;
+    border-radius: 8px;
+}
+.button-primary {
+    background-color: #4a5a6a !important;
+    color: #fff !important;
+}
+strong {
+    font-weight: bold;
+}
+.notice {
+    background-color: #d9e6f2;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+}

@@ -1,0 +1,194 @@
+
+/* Custom overrides */
+:root {
+    /* Zentrale Akzentfarbe – nur hier ändern */
+    --accent: #a6c5e9;
+}
+
+/* Optional: automatische Hover-Farbe (wenn vom Browser unterstützt) */
+@supports (background-color: color-mix(in srgb, red, black)) {
+    :root {
+        --accent-hover: color-mix(in srgb, var(--accent), #000 15%);
+    }
+}
+
+/* Akzentlinien (Header/Überschriften) von Rot -> Blau */
+#header {
+    border-bottom-color: var(--accent) !important;
+}
+
+header.major > :last-child {
+    border-bottom-color: var(--accent) !important;
+}
+
+/* Link-Unterstreichung (border-bottom) von Rot -> Blau */
+a {
+    border-bottom-color: var(--accent) !important;
+}
+
+/* Sidebar Toggle (Hamburger) von Rot -> Blau */
+#sidebar .toggle {
+    border-bottom: 0 !important;
+}
+
+#sidebar .toggle:before {
+    color: var(--accent) !important;
+}
+
+/* Bei manchen Breakpoints hat der Toggle ein Hintergrund-Element */
+#sidebar .toggle:after {
+    background: var(--accent) !important;
+    opacity: 0.18;
+}
+
+#sidebar .toggle:hover:after {
+    opacity: 0.28;
+}
+
+.highlight {
+    background-color: #eef3f7;
+    padding: 1em;
+    border-radius: 8px;
+    
+}
+.button-primary {
+    background-color: #4a5a6a !important;
+    color: #fff !important;
+}
+
+/* Buttons (Theme-Klasse .button) von Rot -> Blau */
+a.button,
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    background-color: var(--accent) !important;
+    box-shadow: inset 0 0 0 2px var(--accent) !important;
+    color: #fff !important;
+    border-bottom: 0 !important;
+}
+
+a.button:hover,
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: var(--accent-hover, var(--accent)) !important;
+    box-shadow: inset 0 0 0 2px var(--accent-hover, var(--accent)) !important;
+    border-bottom: 0 !important;
+}
+
+/* Outline/Alt-Buttons (falls verwendet) */
+a.button.alt,
+.button.alt {
+    background-color: transparent !important;
+    color: var(--accent) !important;
+    box-shadow: inset 0 0 0 2px var(--accent) !important;
+    border-bottom: 0 !important;
+}
+
+a.button.alt:hover,
+.button.alt:hover {
+    background-color: var(--accent) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border-bottom: 0 !important;
+}
+
+strong {
+    font-weight: bold;
+}
+.notice {
+    background-color: #d9e6f2;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* Link-Hoverfarbe ersetzen */
+a:hover,
+nav a:hover {
+    color: var(--accent) !important;
+    border-bottom-color: var(--accent) !important;
+}
+
+/* Linienfarbe ersetzen */
+hr,
+hr + * {
+    border-color: #4a5a6a !important;
+}
+
+
+
+/* Mailadresse wie normaler Text ohne Unterstreichung */
+#main a[href^="mailto:"] {
+    background-color: #fff !important;  /* Weißer Hintergrund */
+    color: #000 !important;             /* Schwarze Schrift */
+    text-decoration: none !important;   /* Unterstreichung entfernen */
+    padding: 0.1em 0.2em;
+    border-radius: 3px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover-Effekt ohne Unterstreichung */
+#main a[href^="mailto:"]:hover {
+    color: #4a5a6a !important;
+    background-color: #eef3f7 !important;
+    text-decoration: none !important;  /* wichtig: auch hier */
+}
+
+
+
+
+
+/* Startseitenbild (Ostsee) */
+#startseite img {
+    width: 100%;       /* volle Breite des Containers */
+    max-width: 1400px;  /* optional: maximale Breite */
+    height: auto;      /* Höhe proportional */
+}
+
+/* Bewerbungsfoto / Portraitbild "Über mich" */
+#uebermich .image.left {
+    max-width: 220px !important;  /* Container begrenzen */
+}
+
+#uebermich .image.left img {
+    width: 100% !important;       /* Bild passt sich Container an */
+    height: auto !important;      /* Höhe proportional */
+}
+
+/* Gruppenbild (Gruppentherapie) */
+#gruppentherapie img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Praxisbilder */
+#praxis img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Bild bei Beratung */
+#beratung img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Abstand zwischen Portraitbild und Text bei "Über mich" */
+#uebermich .image.left {
+    margin-right: 20px;   /* Abstand nach rechts */
+    float: left;          /* stellt sicher, dass Text daneben fließt */
+    max-width: 220px !important;  /* wie vorher */
+}
+
+#uebermich ul {
+    overflow: hidden;     /* verhindert, dass der Text um das Bild herumläuft */
+}
