@@ -194,3 +194,39 @@ hr + * {
 #uebermich ul {
     overflow: hidden;     /* verhindert, dass der Text um das Bild herumläuft */
 }
+
+
+
+#sidebar ul li ul.submenu {
+    display: block;
+    padding-left: 1.2em;
+    margin-top: 0.3em;
+}
+
+#sidebar ul li ul.submenu li a {
+    font-size: 0.9em;
+    color: #4a5a6a;
+    text-decoration: none;
+}
+
+#sidebar ul li ul.submenu li a:hover {
+    color: #2c3e50;
+}
+
+
+#impressum,
+#datenschutz {
+    display: none;
+}
+
+
+.einzug {
+    margin-left: 30px;       /* Einrückung */
+    position: relative;
+}
+
+.einzug::before {
+    content: "→ ";
+    position: absolute;
+    left: -20px;
+}
