@@ -161,6 +161,8 @@ hr + * {
     height: auto !important;      /* Höhe proportional */
 }
 
+
+
 /* Gruppenbild (Gruppentherapie) */
 #gruppentherapie img {
     width: 100%;
