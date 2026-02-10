@@ -149,6 +149,44 @@ hr + * {
     display: block;
     margin: 0;
 }
+#versuch ostseebild weniger unterabstand
+/* Bild selbst */
+.image.main img {
+    display: block;   
+    margin-bottom: 0; /* kein Abstand unter dem Bild */
+    padding: 0;
+}
+
+/* Optional: Container */
+.image.main.welcome-photo {
+    margin-bottom: 0;  /* falls der Container selbst Abstand hat */
+}
+
+/* Section direkt darunter */
+#startseite {
+    margin-top: 0;     /* entfernt extra Abstand über der Section */
+    padding-top: 0;    /* falls padding existiert */
+}
+
+
+
+        /* Ausnahme für Ostsee-Bild */
+.image.main.welcome-photo {
+   margin: 0 0 1em 0 !important; 
+    padding: 0 !important;     /* entfernt Padding */
+}
+
+.image.main.welcome-photo img {
+    display: block;
+    margin: 0 !important;      /* entfernt Abstand unter dem Bild */
+    padding: 0 !important;
+}
+
+/* Section direkt darunter */
+#startseite {
+    margin-top: 0 !important;  /* entfernt Abstand über der Section */
+    padding-top: 0 !important;
+}
 
 
 
@@ -438,3 +476,13 @@ body {
     cursor: default;           /* kein Mauszeiger beim Hover */
     padding: 0.5em 0;          /* Abstand oben/unten wie die Links */
 }
+
+
+
+#versuch abstand unter h3 verringern 
+
+<h3 style="margin-bottom: 5px;">
+  <p class="notice" style="background-color: yellow;">
+    <strong>Gesunder Selbstwert - Online</strong>
+  </p>
+</h3>
