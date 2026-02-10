@@ -103,7 +103,7 @@ Sollten Sie sich bereits in einer laufenden Psychotherapie befinden, ist in der 
                         <p>Derzeit sind meine Kapazitäten für Einzeltherapien erschöpft. Weitere Informationen folgen, sobald wieder freie Therapieplätze vorhanden sind.</p>
                     </section>
 
-  <section id="Kombinationsbehandlung">
+  <section id="kombinationsbehandlung">
                         <header class="major"><h3>Kombinationsbehandlung</h3></header>
                         <p>Die Kombinationsbehandlung vereint die Vorteile der Gruppen- und Einzeltherapie. Es erfolgen zunächst zwei bis fünf Einzelsitzungen, um Ihre Situation zu klären und den Therapiebedarf und Therapieplan zu ergründen. Danach finden ca. 15 Doppelstunden Gruppentherapie im wöchentlichen Rhythmus statt. Parallel dazu können bis zu 9 Stunden Einzeltherapie in Anspruch genommen werden (ca. ein bis zweimal im Monat).<br><br>
 Die Kombinationsbehandlung ist sowohl möglich, wenn Sie Gruppen- und Einzeltherapie bei derselben Therapeutin durchführen als auch wenn Ihre Einzeltherapie bereits bei einer anderen Therapeut:in stattfindet und Sie an der Gruppentherapie bei mir teilnehmen möchten.</p>
@@ -336,6 +336,16 @@ Psychologische Beratung ist eine Selbstzahlenden-Leistung. Das Honorar orientier
                             <li><a href="#kontakt">Kontakt</a></li>
                         </ul>
 
+
+
+            <!-- Footer-Link links unten -->
+            <ul class="sidebar-footer">
+
+ <!--<li class="sidebar-footer-text">M.Sc. Wiebke Markull <br> Praxis für Psychotherapie <br> Fritz-Reuter-Str. 89 <br> 24159 Kiel <br> kontakt@psychotherapie-markull.de</li>
+--> 
+                <li><a href="#impressum">Impressum</a></li>
+                     <li><a href="#datenschutz">Datenschutz</a></li>
+            </ul>
                     </nav>
                 </div>
             </div>
@@ -347,20 +357,15 @@ Psychologische Beratung ist eine Selbstzahlenden-Leistung. Das Honorar orientier
         <script src="https://html5up.net/uploads/demos/editorial/assets/js/main.js"></script>
   
   
+   <!-- 
   
   
-  
-  
-  <div id="footer-links">
-    <a href="#" id="show-legal">Impressum & Datenschutz</a>
-</div>
-
-
 <div id="footer-links" style="text-align:center; margin-top:2em;">
     <a href="#" id="show-legal" style="color:#888; font-size:0.8em; text-decoration:none;">
         Impressum & Datenschutz
     </a>
 </div>
+  
 
 <section id="impressum"> ... </section>
 <section id="datenschutz"> ... </section>
@@ -383,10 +388,47 @@ document.getElementById("show-legal").addEventListener("click", function(e){
 });
 </script>
 
-  
-  
-  
-  
-    </body>
+ <script>
+document.querySelectorAll('.sidebar-footer a').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target.style.display === 'block'){
+            target.style.display = 'none';
+        } else {
+            target.style.display = 'block';
+            target.scrollIntoView({behavior: 'smooth'});
+        }
+    });
+});
+</script>
+
+ 
+
+    <!-- Feste Leiste unten 
+    <div id="footer-bar">
+        <a href="#impressum">Impressum</a> | 
+        <a href="#datenschutz">Datenschutz</a>
+    </div>
+
+
+-->
+
+<script>
+document.querySelectorAll('.sidebar-footer a').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.style.display = 'block';             // Section einblenden
+        target.scrollIntoView({behavior: 'smooth'}); // sanft scrollen
+    });
+});
+</script>
+
+
+</body>
+
+
+
 </html>
 

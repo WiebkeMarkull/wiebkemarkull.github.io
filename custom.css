@@ -302,3 +302,139 @@ hr + * {
 }
 
 
+#versuch die impressum leiste zu fixieren
+
+
+#footer-links {
+    position: fixed;      /* immer sichtbar */
+    bottom: 0;            /* am unteren Rand des Viewports */
+    left: 50%;            /* horizontal zentrieren */
+    transform: translateX(-50%); /* wirklich zentrieren */
+    background-color: rgba(255, 255, 255, 0.9); /* optional leicht transparent */
+    padding: 0.5em 1em;   /* Abstand innen */
+    z-index: 1000;        /* über allem */
+    text-align: center;
+}
+
+#footer-links a {
+    color: #888;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#footer-links a:hover {
+    color: #555;
+}
+
+/* Optional: Content-Padding, damit nichts verdeckt wird */
+body {
+    padding-bottom: 2.5em;
+}
+
+
+#footer-links {
+    position: fixed;      /* bleibt immer sichtbar */
+    bottom: 0;            /* am unteren Bildschirmrand */
+    left: 50%;            /* horizontal zentriert */
+    transform: translateX(-50%); /* wirklich zentrieren */
+    background-color: rgba(255,255,255,0.9); /* optional leicht transparent */
+    padding: 0.5em 1em;
+    z-index: 1000;        /* über allem */
+    text-align: center;
+}
+
+#footer-links a {
+    color: #888;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#footer-links a:hover {
+    color: #555;
+}
+
+/* Platz lassen, damit Content nicht hinter der Leiste verschwindet */
+body {
+    padding-bottom: 2.5em; /* entspricht Höhe der Leiste */
+}
+
+#versuch ohne javascript
+#footer-bar {
+    position: fixed;       /* immer sichtbar */
+    bottom: 0;             /* ganz unten */
+    left: 0;               /* linksbündig */
+    width: 100%;           /* volle Breite */
+    background-color: #f9f9f9; /* dezenter Hintergrund */
+    border-top: 1px solid #ddd; /* Trennlinie */
+    padding: 0.7em 1em;    /* Abstand innen */
+    text-align: center;    /* Links zentrieren */
+    z-index: 1000;         /* über allem */
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.05); /* optional: Schattenkante */
+}
+
+#footer-bar a {
+    color: #888;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin: 0 0.5em;      /* Abstand zwischen Links */
+}
+
+#footer-bar a:hover {
+    color: #555;
+}
+
+/* Platz lassen, damit Content nicht hinter der Leiste verschwindet */
+body {
+    padding-bottom: 3em;  /* entspricht Höhe der Leiste */
+}
+
+
+#versuch impressum in sidebar 
+/* Flex-Container für Sidebar, damit Footer unten bleibt */
+#sidebar .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* volle Sidebar-Höhe */
+}
+
+/* Menü nimmt den verfügbaren Platz */
+#menu > ul {
+    flex: 1;
+    overflow-y: auto; /* falls Menü zu lang ist */
+}
+
+/* Footer-Link links unten */
+#menu .sidebar-footer {
+    margin-top: 2em; /* schiebt die Links ans untere Ende */
+    list-style: none;
+    padding-left: 0;
+    border-top: 1px solid #ddd; /* feine Trennlinie oben */
+}
+
+#menu .sidebar-footer li a {
+    font-size: 0.8em;
+    color: #888;       /* dezent */
+    text-decoration: none;
+    padding: 0.5em 0;  /* Abstand nach oben/unten */
+}
+
+#menu .sidebar-footer li a:hover {
+    color: #555;
+}
+
+#impressum, #datenschutz {
+    display: none; /* standardmäßig versteckt */
+}
+
+
+
+
+
+/* Hinweistext nicht klickbar, aber wie die Links stylen */
+#menu .sidebar-footer li.sidebar-footer-text {
+    color: #4a5a6a;          /* gleiche Farbe wie Menüpunkte */
+    font-size: 0.9em;         /* gleiche Schriftgröße wie die Sidebar */
+    text-decoration: none;     /* kein Unterstrich */
+    cursor: default;           /* kein Mauszeiger beim Hover */
+    padding: 0.5em 0;          /* Abstand oben/unten wie die Links */
+}
