@@ -100,13 +100,16 @@ a.button.alt:hover,
 strong {
     font-weight: bold;
 }
+
+
 .notice {
+    display: block;      /* statt inline-block */
     background-color: #d9e6f2;
     padding: 0.5em 1em;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 1em;
+    margin: 1em 0;       /* Abstand oben/unten */
 }
+
 
 /* Link-Hoverfarbe ersetzen */
 a:hover,
@@ -255,7 +258,8 @@ hr + * {
 
 
 #impressum,
-#datenschutz {
+#datenschutz,
+#barrierefreiheit {
     display: none;
 }
 
@@ -503,3 +507,8 @@ body {
 .sidebar-footer ul li:last-child {
     font-size: 1rem;
 }
+
+.section-title {
+    font-size: 1.3em;
+}
+
