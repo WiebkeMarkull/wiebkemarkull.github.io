@@ -15,20 +15,25 @@
 <!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/pa-Lf5WAGVIJ53vSqrMhxEzs.js"></script>
 <script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init()
 </script>
-
 <script>
-// Warten, bis die Seite geladen ist
 document.addEventListener('DOMContentLoaded', function() {
-    // Alle Links im Hauptmenü auswählen
-    // Passe '.main-menu a' an den CSS-Selektor deines Menüs an
+    // Hash-Änderungen als Pageviews tracken
+    window.addEventListener('hashchange', function() {
+        plausible('pageview', {u: window.location.href});
+    });
+    
+    // Initial Pageview mit Hash (falls die Seite direkt mit Hash geladen wird)
+    if (window.location.hash) {
+        plausible('pageview', {u: window.location.href});
+    }
+    
+    // Menü-Klicks tracken
     var menuLinks = document.querySelectorAll('.main-menu a');
-
     menuLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-            // Event-Name: Menü-Klick + Link-Text
             var eventName = 'Menü-Klick: ' + link.textContent.trim();
             plausible(eventName);
         });
