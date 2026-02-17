@@ -574,3 +574,12 @@ body {
     list-style-position: outside;
   }
 }
+
+.button {
+    color: black;       /* Schriftfarbe */
+    text-decoration: none; /* optional: unterstreicht den Text nicht */
+}
+
+.button:hover {
+    color: black;
+}
