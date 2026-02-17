@@ -512,3 +512,65 @@ body {
     font-size: 1.3em;
 }
 
+.about-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;           /* Container volle Breite */
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+/* Liste rechts vom Bild */
+.text-list {
+  flex: 1;               /* nimmt restlichen Platz bis zum rechten Rand */
+  padding-left: 0;
+  margin: 0;
+}
+/* Bulletpoints wiederherstellen */
+#uebermich ul {
+    overflow: visible; /* vorher hidden */
+    padding-left: 1.2em; /* Platz für Bullet-Points */
+    margin: 0;
+}
+
+
+/* Portraitbild */
+.portrait {
+  width: 350px;               /* Bildgröße */
+  height: 350px;
+  border-radius: 50%;         /* rund */
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12); /* Schatten */
+  flex-shrink: 0;             /* Bild nicht kleiner ziehen */
+}
+
+
+
+/* Section-Divider */
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 40px 0;             /* Abstand über und unter der Linie */
+}
+
+/* Responsive für mobile Geräte */
+@media (max-width: 700px) {
+  .about-me {
+    flex-direction: column;   /* Bild oben, Liste darunter */
+    align-items: center;
+    text-align: center;
+  }
+
+  .portrait {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+
+  .text-list {
+    list-style-position: outside;
+  }
+}
