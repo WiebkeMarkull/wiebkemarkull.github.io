@@ -644,3 +644,26 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto Slab', serif;
 }
+
+#sidebar .toggle {
+  background-color: #fff !important;
+}
+
+#sidebar .toggle {
+  background-color: #fff !important;
+}
+
+#sidebar .toggle:before {
+  font-family: none !important;
+  content: '' !important;
+  display: block !important;
+  width: 1.8rem !important;
+  height: 4px !important;
+  background: #a6c5e9 !important;
+  border-radius: 3px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -12px) !important;
+  box-shadow: 0 12px 0 #a6c5e9, 0 24px 0 #a6c5e9 !important;
+}
