@@ -1,8 +1,12 @@
 
 /* Custom overrides */
 :root {
-    /* Zentrale Akzentfarbe – nur hier ändern */
-    --accent: #a6c5e9;
+  --accent: #a6c5e9;
+  --color-text: #4d4d4d;
+}
+
+body {
+  color: #4d4d4d !important;
 }
 
 /* Optional: automatische Hover-Farbe (wenn vom Browser unterstützt) */
@@ -52,8 +56,8 @@ a {
     
 }
 .button-primary {
-    background-color: #4a5a6a !important;
-    color: #fff !important;
+    background-color: #7e8fa0 !important;
+    color: #000 !important;
 }
 
 /* Buttons (Theme-Klasse .button) von Rot -> Blau */
@@ -65,7 +69,7 @@ input[type="reset"],
 input[type="button"] {
     background-color: var(--accent) !important;
     box-shadow: inset 0 0 0 2px var(--accent) !important;
-    color: #fff !important;
+    color: #000 !important;
     border-bottom: 0 !important;
 }
 
@@ -92,7 +96,7 @@ a.button.alt,
 a.button.alt:hover,
 .button.alt:hover {
     background-color: var(--accent) !important;
-    color: #fff !important;
+    color: #000 !important;
     box-shadow: none !important;
     border-bottom: 0 !important;
 }
@@ -667,3 +671,6 @@ h1,h2,h3,h4,h5,h6 {
   transform: translate(-50%, -12px) !important;
   box-shadow: 0 12px 0 #a6c5e9, 0 24px 0 #a6c5e9 !important;
 }
+
+
+
