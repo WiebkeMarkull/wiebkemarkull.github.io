@@ -140,13 +140,41 @@ hr + * {
     transition: color 0.3s, background-color 0.3s;
 }
 
-/* Hover-Effekt ohne Unterstreichung */
-#main a[href^="mailto:"]:hover {
-    color: #4a5a6a !important;
+#main a[href^="mailto:"] {
     background-color: #eef3f7 !important;
-    text-decoration: none !important;  /* wichtig: auch hier */
+    color: #000 !important;
+    text-decoration: none !important;
+    padding: 0.1em 0.2em;
+    border-radius: 3px;
+    display: inline-block;                 /* wichtig für transform */
+    transition: transform 0.15s ease, 
+                color 0.15s ease, 
+                background-color 0.15s ease;
 }
 
+#main a[href^="mailto:"]:hover {
+    transform: scale(1.03);
+    color: #4a5a6a !important;
+}
+
+
+
+#main a.termin-link {
+    background-color: #eef3f7 !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    padding: 0.1em 0.2em;
+    border-radius: 3px;
+    display: inline-block;
+    transition: transform 0.15s ease, 
+                color 0.15s ease, 
+                background-color 0.15s ease;
+}
+
+#main a.termin-link:hover {
+    transform: scale(1.03);
+    color: #4a5a6a !important;
+}
 
 
 #startseite img {
