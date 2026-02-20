@@ -12,63 +12,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- CSS -->
-<!-- Kritisches CSS für First Rendering -->
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #fff;
-  color: #222;
-}
+<link rel="stylesheet" href="assets/css/main.css?v=20260219-1" />
+<link rel="stylesheet" href="custom.css?v=20260219-1" />
 
-#wrapper {
-  width: 100%;
-}
 
-#header {
-  padding: 1rem 2rem;
-  background: #ffffff;
-}
-
-.logo strong {
-  font-weight: 700;
-}
-
-.image.main img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-.button-primary {
-  display: inline-block;
-  padding: 0.75rem 1.2rem;
-  background: #2c5f7c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-</style>
-
-<!-- CSS non-blocking laden -->
-<link rel="preload" href="assets/css/main.css?v=20260219-1" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="custom.css?v=20260219-1" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<noscript>
-<link rel="stylesheet" href="assets/css/main.css?v=20260219-1">
-<link rel="stylesheet" href="custom.css?v=20260219-1">
-</noscript>
 <!-- JS-Datei laden, erst ausführen, wenn HTML fertig -->
 <script src="assets/js/main.js?v=20260219-1" defer></script>
 
