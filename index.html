@@ -69,7 +69,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <span class="image main welcome-photo">
   <picture>
     <source srcset="images/ostsee.webp" type="image/webp">
-    <img src="images/ostsee.jpg" alt="Ostsee" >
+ <img 
+  src="/images/ostsee-800.webp"
+  srcset="/images/ostsee-400.webp 400w,
+          /images/ostsee-800.webp 800w,
+          /images/ostsee-1400.webp 1400w"
+  sizes="(max-width: 480px) 400px,
+         (max-width: 1024px) 800px,
+         1400px"
+  width="1400" 
+  height="559"
+  alt="Ostsee"
+  loading="lazy"
+>
   </picture>
 </span>
 
