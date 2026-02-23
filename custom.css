@@ -207,7 +207,7 @@ hr + * {
 
         /* Ausnahme für Ostsee-Bild */
 .image.main.welcome-photo {
-   margin: 0 0 1em 0 !important; 
+   margin: 2em 0 1em 0 !important; 
     padding: 0 !important;     /* entfernt Padding */
 }
 
