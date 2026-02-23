@@ -711,5 +711,16 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0 12px 0 #a6c5e9, 0 24px 0 #a6c5e9 !important;
 }
 
+/* Versuch, die abstände über den überschriten anzugleichen
 
+/* Einheitlicher Abstand über allen Sections */
+#main > section {
+    margin-top: 3em;
+}
+
+/* Oder gezielt für die betroffenen */
+#angebot,
+#einzeltherapie {
+    margin-top: 3em;
+}
 
