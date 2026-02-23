@@ -225,6 +225,17 @@ hr + * {
 
 
 
+
+
+.image.main.welcome-photo picture,
+.image.main.welcome-photo img {
+  width: 100%;
+  height: auto !important;  /* überschreibt framework-seitige Höhenangaben */
+  object-fit: contain;
+  display: block;
+}
+
+
 /* Bewerbungsfoto / Portraitbild "Über mich" */
 #uebermich .image.left {
     max-width: 220px !important;  /* Container begrenzen */
