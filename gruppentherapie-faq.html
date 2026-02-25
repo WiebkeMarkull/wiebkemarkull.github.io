@@ -1,34 +1,109 @@
 <!DOCTYPE HTML>
 <html lang="de">
 
-<head>
-    <meta charset="utf-8" />
-    <title>FAQ – Häufige Fragen zur Gruppentherapie | Psychotherapie Kiel</title>
-    <meta name="description" content="Häufige Fragen zur Gruppentherapie in meiner Kieler Praxis: Wirksamkeit, Ablauf, Ängste und organisatorische Informationen.">
-    <link rel="canonical" href="https://www.psychotherapie-markull.de/gruppentherapie-faq/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+     <meta charset="utf-8" />     
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css?v=20260219-1" />
-    <link rel="stylesheet" href="/custom.css?v=20260219-1" />
+        <title>Praxis für Psychotherapie - Wiebke Markull</title>
+      
+  
+    <link rel="canonical" href="https://www.psychotherapie-markull.de/" />
+   
 
-    <!-- JS -->
-    <script src="/assets/js/main.js?v=20260219-1" defer></script>
-</head>
+    <meta name="description" content="Psychotherapie in Kiel (Privatpraxis): Gruppen- und Einzeltherapie sowie Beratung – auch online. Schwerpunkt Selbstwert und Lebenskrisen. Freie Plätze verfügbar.">
 
-<body class="is-preload">
-    <div id="wrapper">
-        <!-- Main Content -->
-        <div id="main">
-            <div class="inner">
-                <!-- Header -->
-                <header id="header" role="banner">
-                    <a href="/" class="logo">
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/main.css?v=20260219-1" />
+<link rel="stylesheet" href="custom.css?v=20260219-1" />
+
+
+<!-- JS-Datei laden, erst ausführen, wenn HTML fertig -->
+<script src="assets/js/main.js?v=20260219-1" defer></script>
+
+
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-Lf5WAGVIJ53vSqrMhxEzs.js"></script>
+<script>
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init()
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hash-Änderungen als Pageviews tracken
+    window.addEventListener('hashchange', function() {
+        plausible('pageview', {u: window.location.href});
+    });
+    
+    // Initial Pageview mit Hash (falls die Seite direkt mit Hash geladen wird)
+    if (window.location.hash) {
+        plausible('pageview', {u: window.location.href});
+    }
+    
+    // Menü-Klicks tracken
+    var menuLinks = document.querySelectorAll('.main-menu a');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var eventName = 'Menü-Klick: ' + link.textContent.trim();
+            plausible(eventName);
+        });
+    });
+});
+</script>
+
+<script>
+function toggleQuellen(event) {
+    event.preventDefault();
+    const text = event.target.parentElement.nextElementSibling;
+
+    if (text.style.display === "none") {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
+}
+</script>
+
+    </head>
+
+
+    <body class="is-preload">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+
+
+   <!-- Header -->
+                    <header id="header" role="banner">
+                    <a href="#startseite" class="logo">
                         <strong>Praxis für Psychotherapie</strong> Wiebke Markull
                     </a>
-                </header>
+                    </header>
 
-                <main id="main-content" role="main">
+
+<span class="image main welcome-photo">
+  <picture>
+    <source srcset="images/ostsee.webp" type="image/webp">
+ <img 
+  src="/images/ostsee-800.webp"
+  srcset="/images/ostsee-400.webp 400w,
+          /images/ostsee-800.webp 800w,
+          /images/ostsee-1400.webp 1400w"
+  sizes="(max-width: 480px) 400px,
+         (max-width: 1024px) 800px,
+         1400px"
+  width="1400" 
+  height="559"
+  alt="Ostsee"
+  loading="lazy"
+>
+  </picture>
+</span>
+
+
+ <main id="main-content" role="main">
                     <section id="gruppentherapie-faq">
                         <header class="major">
                             <h1>FAQ – Häufige Fragen zur Gruppentherapie</h1>
@@ -40,7 +115,46 @@
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Ist Gruppentherapie genauso wirksam wie Einzeltherapie?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja. Studien zeigen, dass Gruppentherapie bei vielen psychischen Themen (z. B. Selbstwert, Ängste, Lebenskrisen) eine ebenso hohe Wirksamkeit wie Einzeltherapie haben kann. Zusätzlich profitieren Teilnehmende vom Austausch und gegenseitigen Feedback.</p>
+                                    <p itemprop="text">Ja. Die Studienlage diesbezüglich ist inzwischen seit etwa 25 Jahren konsistent. Studien zeigen, dass Gruppentherapie bei den meisten psychischen Erkrankungen eine genauso hohe Wirksamkeit hat wie Einzeltherapie. Gut erforscht ist dies u.A. für xxx 
+                
+    <a href="#" class="quellen-toggle" onclick="toggleQuellen(event)">(Quellen).</a>
+                                    </p>
+
+<div class="quellen-text" style="display: none;">
+    Burlingame, G. M., Seebeck, J. D., Janis, R. A., Whitcomb, K. E., Barkowski, S., Rosendahl, J., & Strauss, B. (2016)
+Outcome Differences Between Individual and Group Formats When Identical and Nonidentical Treatments, Patients, and Doses Are Compared: A 25-Year Meta-Analytic Perspective.
+Psychotherapy, 53(4), 446–461. | DOI: 10.1037/pst0000099
+</div>
+                      </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Wie wirkt Gruppentherapie und warum ist es genauso wirksam wie Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Welche Vorteile hat Gruppentherapie im Vergleich zu Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Welche Nachteile hat Gruppentherapie im Vergleich zu Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
                                 </div>
                             </div>
                         </div>
@@ -51,14 +165,27 @@
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Ich habe Angst vor Gruppen – ist das normal?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja, viele Menschen fühlen sich zunächst unsicher. In meinen Gruppen bauen wir Vertrauen auf, klären Erwartungen und schaffen einen geschützten Raum, in dem Ängste Schritt für Schritt verringert werden.</p>
+                                    <p itemprop="text">Ja, damit sind Sie sogar in sehr guter Gesellschaft - viele Menschen fühlen sich zunächst unsicher. Die Vorstellung, seine Gefühle, Gedanken und Erfahrungen mit anderen zunächst Unbekannten zu teilen, löst bei vielen Menschen Scham und Verunsicherung aus. Umso hilfreicher ist es, die Erfahrung zu machen, in der Gruppe Verständnis von anderen zu erfahren und zu erleben, dass Scham und Unsicherheit da sein dürfen und von Stunde zu Stunde weniger werden.
+
+                                    
+                                        <br><br>
+                                        In meinen Gruppen lege ich sehr viel Wert darauf, eine vertrauensvolle Atmosphäre zu schaffen, die es Ihnen nicht nur erleichtert, sich in der Gruppe zu öffnen, sondern die Ihnen auch die Möglichkeit gibt, hilfreiche Erfahrungen in einer Gruppe zu machen, die so in keiner Einzeltherapie möglich sind.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Muss ich vorab Erfahrung mit Therapie haben?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Nein. Offenheit für neue Erfahrungen und die Bereitschaft, sich mit dem eigenen Selbstbild auseinanderzusetzen, sind ausreichend. Vorerfahrungen können hilfreich sein, sind aber keine Voraussetzung.</p>
+                                    <p itemprop="text">Nein. Offenheit für neue Erfahrungen und die Bereitschaft, sich mit dem eigenen Selbstbild und eigenen Verhaltensmustern auseinanderzusetzen, sind vollkommen ausreichend. Erfahrungsgemäß profitieren in Gruppen sowohl Teilnehmende ohne therapeutische Vorerfahrung als auch Teilnehmende mit viel therapeutischer Vorerfahrung.</p>
+                                </div>
+                            </div>
+                        
+                            
+
+                          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Ist es für mich nicht entspannter, wenn ich nur mit einer anderen Person im Raum bin?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">Die Situation im Einzelsetting ist vielleicht zunächst überschaubarer und kann sich dadurch entspannter anfühlen. Da in Gruppensituationen hilfreiche und problematische Verhaltensmuster schneller sichtbar werden und angenehme und unangenehme Empfindungen schneller erlebbar werden, kann sich diese Therapieform auch intensiver anfühlen. Auf Ihr persönliches therapeutisches Vorankommen wirkt sich dies erfahrungsgemäß jedoch eher günstig und beschleunigend aus.</p>
                                 </div>
                             </div>
                         </div>
@@ -67,68 +194,279 @@
                         <h2>Organisatorisches & Ablauf</h2>
                         <div class="notice" style="background-color: #e4f1d9; padding:1em; border-radius:8px;">
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                <h3 itemprop="name">Wie groß ist eine Gruppe und wie läuft eine Sitzung ab?</h3>
+                                <h3 itemprop="name">Wie groß ist eine Gruppe und wie lang dauert eine Gruppensitzung?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Die Gruppen bestehen aus 4–8 Teilnehmenden. Eine Sitzung dauert in der Regel 100 Minuten. Ablauf: Check-in, Gruppengespräch, Übungen, Erfahrungsaustausch, Abschluss-Feedback.</p>
+                                    <p itemprop="text">Die Gruppen bestehen aus 4–8 Teilnehmenden. Eine Sitzung dauert in der Regel 100 Minuten.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Kann ich Gruppentherapie und Einzeltherapie kombinieren?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja, in der Regel ist die Kombination möglich. Viele meiner Teilnehmenden nutzen Gruppentherapie zusätzlich zu ihrer Einzeltherapie, um Vorteile beider Formate zu erleben.</p>
+                                    <p itemprop="text">Ja, eine Kombinationsbehandlung ist möglich und sinnvoll. Viele Teilnehmende nutzen Gruppentherapie zusätzlich zu ihrer Einzeltherapie, um Vorteile beider Formate zu kombinieren. Die Einzeltherapie kann bei derselben Therapeutin oder auch bei einer anderen Therapeutin oder einem anderen Therapeuten stattfinden.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Wie kann ich mich anmelden?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Zur Anmeldung oder für ein Vorgespräch kontaktieren Sie mich bitte per E-Mail: <a href="mailto:kontakt@psychotherapie-markull.de">kontakt@psychotherapie-markull.de</a> oder über die Online-Terminvereinbarung.</p>
+                                    <p itemprop="text">Zur Anmeldung oder für ein Vorgespräch kontaktieren Sie mich bitte per E-Mail: <a href="mailto:kontakt@psychotherapie-markull.de">kontakt@psychotherapie-markull.de</a> oder über die 
+                                        
+                                          <a href="https://viewer.epikur-portal.de/praxis/praxis-fuer-psychotherapie---markull"
+                                            class="termin-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                        Online-Terminvereinbarung   </a>
+
+                            (Sie werden auf die Website meines Terminbuchungsanbieters weitergeleitet). <br></p>
                                 </div>
                             </div>
                         </div>
-
-                        <p>Weitere Fragen beantworte ich gern persönlich im Vorgespräch.</p>
-                        <a href="mailto:kontakt@psychotherapie-markull.de" class="button-primary">kontakt@psychotherapie-markull.de</a>
+                            <br>
+                        <p> <strong>Weitere Fragen beantworte ich gern per Mail oder persönlich im Vorgespräch.</strong> </p>
+                     
 
                     </section>
-                </main>
-            </div>
-        </div>
+   
 
-        <!-- Sidebar -->
-        <div id="sidebar">
-            <div class="inner">
-                <nav id="menu">
-                    <header class="major"><h2>Menü</h2></header>
-                    <ul class="menu-top">
-                        <li><a href="#startseite">Startseite</a></li>
-                        <li>
-                            <a href="#angebot">Angebot</a>
-                            <ul class="submenu">
-                                <li><a href="/gruppentherapie-kiel/">Gruppentherapie</a></li>
-                                <li><a href="#einzeltherapie">Einzeltherapie</a></li>
-                                <li><a href="#kombinationsbehandlung">Kombinationsbehandlung</a></li>
-                                <li><a href="#beratung">Beratung</a></li>
-                                <li><a href="#fortbildung">Fortbildung</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#kosten">Kosten</a></li>
-                        <li><a href="#uebermich">Über mich</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </nav>
+                      <hr class="section-divider">
 
-                <div class="sidebar-footer">
-                    <ul>
-                        <li><a href="#impressum">Impressum</a></li>
-                        <li><a href="#datenschutz">Datenschutz</a></li>
-                        <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
-                        <li style="font-size:0.7rem;">©2026 Praxis für Psychotherapie Wiebke Markull. Alle Rechte vorbehalten.</li>
-                    </ul>
-                </div>
+
+
+  <!-- Impressum -->
+                    <section id="impressum">
+                        <header class="major"><h2>Impressum</h2></header>
+                     <p><strong>Anbieter und inhaltlich Verantwortliche gemäß § 55 Abs. 2 RstV:</strong><br/>
+                        M.Sc. Wiebke Markull<br/>
+                        Privatpraxis für Psychotherapie<br/>
+                        Fritz-Reuter-Str. 89, 24159 Kiel<br/>
+                        E-Mail: kontakt@psychotherapie-markull.de<br/>
+                        Webpräsenz: www.psychotherapie-markull.de</p>
+                        <p><strong>Angaben gemäß § 5 DDG</strong><br>
+                          Aufsichtsbehörde<br>
+                          Landesamt für Soziale Dienste<br>
+                            
+                      <p><strong>Zuständige Aufsichtsbehörde</strong><br>
+                      Kassenärztliche Vereinigung Schleswig-Holstein<br>
+                      Bismarckallee 1-6<br>
+                      23795 Bad Segeberg</p>
+                    
+                      <p><strong>Website-Design</strong><br>
+                      Die Vorlage „Editorial“ wurde erstellt von 
+                      <a href="https://html5up.net" target="_blank">HTML5 UP</a> 
+                      und unterliegt der 
+                      <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Lizenz (CC BY 3.0)</a>.
+                      </p>
+
+                      <p><strong>Haftungsausschluss</strong><br>
+                    
+                      <p><strong>Haftung für Inhalte</strong><br>
+                      Als Diensteanbieter bin ich gemäß § 7 Abs. 1 des Digitalen-Dienste-Gesetzes (DDG) für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach den §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br>
+                      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.<br>
+                      Alle auf dieser Website enthaltenen Informationen wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität übernehme ich jedoch keine Gewähr.</p>
+                    
+                      <p><strong>Haftung für Links</strong><br>
+                      Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.<br>
+                      Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+                    
+                      <p><strong>Urheberrecht</strong><br>
+                      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br>
+                      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+                                        </section>
+
+ <!-- Datenschutzerklärung -->
+                    <section id="datenschutz">
+                        <header class="major"><h2>Datenschutzerklärung</h2></header>
+                        
+                          <p><strong>1. Allgemeiner Hinweis</strong><br>
+                          Ich nehme den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang sowie unter Beachtung der geltenden gesetzlichen Datenschutzvorschriften, insbesondere der EU-Datenschutz-Grundverordnung (DSGVO), verarbeitet.<br>
+                          Diese Datenschutzerklärung informiert Sie darüber, welche personenbezogenen Daten beim Besuch dieser Website erhoben werden, zu welchem Zweck dies geschieht und in welchem Umfang diese Daten ggf. Dritten zugänglich gemacht werden.</p>
+                        
+                          <p><strong>2. Verantwortliche Stelle</strong><br>
+                          Verantwortlich für die Datenverarbeitung auf dieser Website:<br>
+                          Wiebke Markull<br>
+                          Psychologische Psychotherapeutin<br>
+                          Fritz-Reuter-Straße 89<br>
+                          24159 Kiel<br>
+                          kontakt@psychotherapie-markull.de</p>
+                        
+                          <p><strong>3. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck von deren Verwendung</strong><br>
+                          <em>a) Beim Besuch der Website</em><br>
+                          Beim Aufruf dieser Website werden durch den Hosting-Anbieter STRATO AG automatisch Informationen in sogenannten Server-Logfiles erhoben und gespeichert. Dies sind insbesondere:<br>
+                          - IP-Adresse des anfragenden Endgeräts<br>
+                          - Datum und Uhrzeit des Zugriffs<br>
+                          - Name und URL der abgerufenen Datei<br>
+                          - Website, von der aus der Zugriff erfolgt (Referrer-URL)<br>
+                          - verwendeter Browser und ggf. das Betriebssystem des Endgeräts<br>
+                          - Name des Access-Providers<br><br>
+                        
+                          Diese Daten werden ausschließlich zum Zweck der technischen Überwachung und Sicherstellung eines störungsfreien Betriebs der Website erhoben. Eine personenbezogene Auswertung oder Zusammenführung mit anderen Datenquellen findet nicht statt.<br>
+                          Die Datenverarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Grundlage des berechtigten Interesses an einem sicheren und stabilen Betrieb der Website.<br><br>
+                        
+                          Der Hosting-Dienstleister ist:<br>
+                          STRATO AG<br>
+                          Otto-Ostrowski-Straße 7<br>
+                          10249 Berlin<br>
+                          Deutschland</p>
+                        
+                          <p><strong>4. Kontaktaufnahme</strong><br>
+                          Wenn Sie mit mir per E-Mail Kontakt aufnehmen, werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, Telefonnummer, E-Mail-Adresse sowie der Inhalt Ihrer Nachricht) ausschließlich zum Zweck der Bearbeitung Ihres Anliegens gespeichert und verarbeitet.<br>
+                          Eine Weitergabe dieser Daten an Dritte erfolgt nicht ohne Ihre ausdrückliche Einwilligung.<br>
+                          Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage im Zusammenhang mit der Anbahnung oder Durchführung eines Vertrags steht. In anderen Fällen erfolgt die Verarbeitung gemäß Art. 6 Abs. 1 lit. f DSGVO auf Grundlage meines berechtigten Interesses an der Bearbeitung Ihrer Anfrage.</p>
+                        
+                          <p><strong>5. Weitergabe von Daten</strong><br>
+                          Eine Übermittlung Ihrer personenbezogenen Daten an Dritte findet nicht statt, es sei denn, ich bin gesetzlich dazu verpflichtet (Art. 6 Abs. 1 lit. c DSGVO) oder Sie haben ausdrücklich eingewilligt (Art. 6 Abs. 1 lit. a DSGVO).</p>
+                        
+                          <p><strong>6. Ihre Rechte als betroffene Person</strong><br>
+                          Als betroffene Person stehen Ihnen nach der Datenschutz-Grundverordnung (DSGVO) insbesondere folgende Rechte zu:<br>
+                          - Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO)<br>
+                          - Recht auf Berichtigung unrichtiger oder unvollständiger Daten (Art. 16 DSGVO)<br>
+                          - Recht auf Löschung Ihrer gespeicherten Daten (Art. 17 DSGVO)<br>
+                          - Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)<br>
+                          - Recht auf Datenübertragbarkeit (Art. 20 DSGVO)<br>
+                          - Recht auf Widerspruch gegen die Verarbeitung Ihrer Daten (Art. 21 DSGVO)<br><br>
+                          Zur Ausübung Ihrer Rechte genügt eine formlose Mitteilung per E-Mail oder Post an die im Impressum genannte Adresse.</p>
+                        
+                          <p><strong>7. Beschwerderecht</strong><br>
+                          Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die Datenschutz-Grundverordnung verstößt, haben Sie gemäß Art. 77 DSGVO das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde:<br>
+                          Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein (ULD)<br>
+                          Holstenstraße 98, 24103 Kiel<br>
+                          Tel.: 0431 / 988-1200<br>
+                          E-Mail: mail@datenschutzzentrum.de<br>
+                          Web: www.datenschutzzentrum.de</p>
+                        
+                          <p><strong>8. Sicherheit</strong><br>
+                          Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an der Adresszeile Ihres Browsers („https://“) sowie am Schloss-Symbol.<br>
+                          Ich weise darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) trotz aller Sicherheitsmaßnahmen Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist technisch nicht möglich.</p>
+                        
+                            <p><strong>9. Online-Terminvereinbarung über epikur</strong><br>
+                            Ich biete auf meiner Website die Möglichkeit an, Termine online zu vereinbaren. Die Online-Terminbuchung erfolgt über die Praxisverwaltungssoftware der epikur Software GmbH & Co. KG, Franklinstraße 26a, 10587 Berlin.<br>
+                            Bei der Online-Terminvereinbarung handelt es sich um ein externes Angebot. Wenn Sie den entsprechenden Link anklicken, werden Sie auf eine Website der epikur Software GmbH & Co. KG weitergeleitet. Erst mit dem Anklicken des Links werden personenbezogene Daten (z. B. Ihre IP-Adresse) an epikur übermittelt. Beim bloßen Aufruf meiner Website findet keine Datenübertragung an epikur statt.
+                            Im Rahmen der Terminbuchung werden die von Ihnen eingegebenen personenbezogenen Daten verarbeitet. Hierzu können insbesondere gehören: <br>
+                                - Vor- und Nachname<br>
+                                - Kontaktdaten (z. B. Telefonnummer, E-Mail-Adresse)<br>
+                                - terminbezogene Angaben<br>
+                                Sofern Sie Angaben mit Gesundheitsbezug machen, handelt es sich um besondere Kategorien personenbezogener Daten im Sinne des Art. 9 DSGVO.<br>
+                            Die Verarbeitung erfolgt zum Zweck der Terminvereinbarung sowie der Praxisorganisation.
+                            Rechtsgrundlagen der Verarbeitung sind: <br>
+                                - Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur Durchführung vorvertraglicher Maßnahmen), <br>
+                                - Art. 9 Abs. 2 lit. h DSGVO (Verarbeitung von Gesundheitsdaten im Rahmen der Gesundheitsversorgung).<br>
+
+                            Mit der epikur Software GmbH & Co. KG besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Epikur verarbeitet die Daten ausschließlich weisungsgebunden und nicht zu eigenen Zwecken.<br>
+                            Weitere Informationen zur Datenverarbeitung durch epikur finden Sie in der Datenschutzerklärung des Anbieters auf dessen Website.
+
+                            </p>
+                        
+                            <p><strong>10. Webanalyse mit Plausible Analytics</strong><br>
+                            Zum Schutz Ihrer Privatsphäre verwende ich auf meiner Website das datenschutzfreundliche Webanalyse-Tool Plausible Analytics der Plausible Insights OÜ, Västriku tn 2, 50403 Tartu, Estland.<br>
+                            Gerade im sensiblen Bereich psychotherapeutischer Leistungen ist mir ein besonders zurückhaltender und datensparsamer Umgang mit Nutzungsdaten wichtig. Daher habe ich mich bewusst für eine Analyse-Lösung entschieden, die ohne Cookies arbeitet und keine personenbezogenen Daten speichert.</p>
+
+                            <p><strong>Art und Umfang der Verarbeitung</strong><br>
+                            Beim Besuch meiner Website werden ausschließlich anonymisierte und aggregierte Informationen verarbeitet:</p>
+
+                            
+                            - aufgerufene Seite bzw. URL <br>
+                            - Referrer-URL (zuvor besuchte Seite)<br>
+                            - Datum und Uhrzeit des Zugriffs<br>
+                            - verwendeter Browser und Betriebssystem<br>
+                            - Gerätetyp<br>
+                            - ungefähres Herkunftsland (auf Basis einer anonymisierten IP-Adresse)<br>
+                            
+
+                            <p>
+                            Die IP-Adresse wird nicht vollständig gespeichert. Sie wird unmittelbar anonymisiert und nicht dauerhaft vorgehalten. Eine Identifizierung einzelner Personen ist nicht möglich.<br>
+                            Ich setze keine Cookies ein, speichere keine persistenten Identifikatoren und erstelle keine Nutzungsprofile.
+                            </p>
+
+                            <p><strong>Ereignis-Tracking</strong><br>
+                            Zur technischen Auswertung der Nutzung erfasse ich anonyme Ereignisse, beispielsweise Seitenaufrufe bei interner Navigation oder Klicks auf Menüelemente. Diese Auswertungen erfolgen ausschließlich in aggregierter Form und lassen keinerlei Rückschlüsse auf einzelne Besucher:innen zu. Es werden keine Gesundheitsdaten, keine Formularinhalte und keine personenbezogenen Daten an Plausible übermittelt.</p>
+
+                            <p><strong>Zweck der Verarbeitung</strong><br>
+                            Die Verarbeitung erfolgt ausschließlich zur statistischen Auswertung der Nutzung meiner Website sowie zur technischen Optimierung meines Informationsangebots. Ziel ist es, Inhalte verständlicher zu strukturieren und die Benutzerfreundlichkeit zu verbessern.</p>
+
+                            <p><strong>Rechtsgrundlage</strong><br>
+                            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Mein berechtigtes Interesse besteht in der datenschutzkonformen Analyse und Verbesserung meiner Website. Da keine Cookies gesetzt und keine personenbezogenen Daten verarbeitet werden, überwiegen keine schutzwürdigen Interessen der betroffenen Personen. Eine Einwilligung gemäß § 25 TTDSG ist nicht erforderlich, da keine Informationen auf Ihrem Endgerät gespeichert oder ausgelesen werden.</p>
+
+                            <p><strong>Auftragsverarbeitung</strong><br>
+                            Mit dem Anbieter habe ich einen Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO abgeschlossen.</p>
+
+                            <p><strong>Datenübermittlung und Speicherdauer</strong><br>
+                            Die Verarbeitung erfolgt auf Servern innerhalb der Europäischen Union. Eine Übermittlung in Drittstaaten findet nicht statt. Die erhobenen Daten werden ausschließlich anonymisiert und in aggregierter Form gespeichert. Eine Identifizierung einzelner Besucher ist nicht möglich.</p>
+
+
+
+                          <p><strong>11. Änderungen dieser Datenschutzerklärung</strong><br>
+                          Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, um sie an geänderte rechtliche Anforderungen anzupassen oder Änderungen meiner Leistungen umzusetzen.<br>
+                          Bitte informieren Sie sich bei jedem Besuch meiner Website über die geltende Datenschutzerklärung. Die jeweils aktuelle Version ist auf der Website veröffentlicht und gilt für Ihren erneuten Besuch.</p>
+                        </section>
+
+  <!-- Barrierefreiheit -->
+
+                          <section id="barrierefreiheit">
+                        <header class="major"><h2>Barrierefreiheit</h2></header>
+                     <p>
+                       Ich bin bemüht, diese Website so barrierefrei wie möglich zu gestalten und orientiere mich dabei an den <strong>Richtlinien der WCAG 2.1</strong>.
+                          </p>
+                          <p>
+                            Die Website befindet sich aktuell in einem <strong>fortlaufenden Verbesserungsprozess</strong>, um die Zugänglichkeit für alle Nutzer:innen zu erhöhen.
+                          </p>
+                          <p>
+                            Sollten Ihnen Barrieren auffallen oder Sie Schwierigkeiten bei der Nutzung meiner Website haben, <strong>kontaktieren Sie mich bitte unter</strong>:
+                            <a href="mailto: kontakt@psychotherapie-markull.de">kontakt@psychotherapie-markull.de</a>
+                          </p>
+                          <p>
+                            <em>Letzte Überprüfung: 10.02.2026</em>
+                          </p>
+                                            </section>
+
+                                      
+
+                    
+        </div> <!-- inner -->
+    </div> <!-- main -->
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+            <nav id="menu">
+                <header class="major"><h2>Menü</h2></header>
+
+                <ul class="menu-top">
+                    <li><a href="#startseite">Startseite</a></li>
+                    <li>
+                        <a href="#angebot">Angebot</a>
+                        <ul class="submenu">
+                            <li><a href="#gruppentherapie">Gruppentherapie</a></li>
+                            <li><a href="#einzeltherapie">Einzeltherapie</a></li>
+                            <li><a href="#kombinationsbehandlung">Kombinationsbehandlung</a></li>
+                            <li><a href="#beratung">Beratung</a></li>
+                            <li><a href="#fortbildung">Fortbildung</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#kosten">Kosten</a></li>
+                    <li><a href="#uebermich">Über mich</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li><a href="#impressum">Impressum</a></li>
+                    <li><a href="#datenschutz">Datenschutz</a></li>
+                    <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
+                    <li style="font-size: 0.7rem;">©2026 Praxis für Psychotherapie Wiebke Markull. Alle Rechte vorbehalten.</li>
+                </ul>
             </div>
         </div>
     </div>
+
+</div> <!-- wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
