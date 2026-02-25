@@ -53,8 +53,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+function toggleQuellen(event) {
+    event.preventDefault();
+    const text = event.target.parentElement.nextElementSibling;
+
+    if (text.style.display === "none") {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
+}
+</script>
 
     </head>
+
+
     <body class="is-preload">
         <div id="wrapper">
             <div id="main">
@@ -101,7 +115,46 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Ist Gruppentherapie genauso wirksam wie Einzeltherapie?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja. Studien zeigen, dass Gruppentherapie bei vielen psychischen Themen (z. B. Selbstwert, Ängste, Lebenskrisen) eine ebenso hohe Wirksamkeit wie Einzeltherapie haben kann. Zusätzlich profitieren Teilnehmende vom Austausch und gegenseitigen Feedback.</p>
+                                    <p itemprop="text">Ja. Die Studienlage diesbezüglich ist inzwischen seit etwa 25 Jahren konsistent. Studien zeigen, dass Gruppentherapie bei den meisten psychischen Erkrankungen eine genauso hohe Wirksamkeit hat wie Einzeltherapie. Gut erforscht ist dies u.A. für xxx 
+                
+    <a href="#" class="quellen-toggle" onclick="toggleQuellen(event)">(Quellen).</a>
+                                    </p>
+
+<div class="quellen-text" style="display: none;">
+    Burlingame, G. M., Seebeck, J. D., Janis, R. A., Whitcomb, K. E., Barkowski, S., Rosendahl, J., & Strauss, B. (2016)
+Outcome Differences Between Individual and Group Formats When Identical and Nonidentical Treatments, Patients, and Doses Are Compared: A 25-Year Meta-Analytic Perspective.
+Psychotherapy, 53(4), 446–461. | DOI: 10.1037/pst0000099
+</div>
+                      </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Wie wirkt Gruppentherapie und warum ist es genauso wirksam wie Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Welche Vorteile hat Gruppentherapie im Vergleich zu Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="notice" style="background-color: #dce7e8; padding:1em; border-radius:8px;">
+                            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Welche Nachteile hat Gruppentherapie im Vergleich zu Einzeltherapie?</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">xx </p>
                                 </div>
                             </div>
                         </div>
@@ -112,56 +165,65 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Ich habe Angst vor Gruppen – ist das normal?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja, viele Menschen fühlen sich zunächst unsicher. In meinen Gruppen bauen wir Vertrauen auf, klären Erwartungen und schaffen einen geschützten Raum, in dem Ängste Schritt für Schritt verringert werden.</p>
+                                    <p itemprop="text">Ja, damit sind Sie sogar in sehr guter Gesellschaft - viele Menschen fühlen sich zunächst unsicher. Die Vorstellung, seine Gefühle, Gedanken und Erfahrungen mit anderen zunächst Unbekannten zu teilen, löst bei vielen Menschen Scham und Verunsicherung aus. Umso hilfreicher ist es, die Erfahrung zu machen, in der Gruppe Verständnis von anderen zu erfahren und zu erleben, dass Scham und Unsicherheit da sein dürfen und von Stunde zu Stunde weniger werden.
+
+                                    
+                                        <br><br>
+                                        In meinen Gruppen lege ich sehr viel Wert darauf, eine vertrauensvolle Atmosphäre zu schaffen, die es Ihnen nicht nur erleichtert, sich in der Gruppe zu öffnen, sondern die Ihnen auch die Möglichkeit gibt, hilfreiche Erfahrungen in einer Gruppe zu machen, die so in keiner Einzeltherapie möglich sind.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Muss ich vorab Erfahrung mit Therapie haben?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Nein. Offenheit für neue Erfahrungen und die Bereitschaft, sich mit dem eigenen Selbstbild auseinanderzusetzen, sind ausreichend. Vorerfahrungen können hilfreich sein, sind aber keine Voraussetzung.</p>
+                                    <p itemprop="text">Nein. Offenheit für neue Erfahrungen und die Bereitschaft, sich mit dem eigenen Selbstbild und eigenen Verhaltensmustern auseinanderzusetzen, sind vollkommen ausreichend. Erfahrungsgemäß profitieren in Gruppen sowohl Teilnehmende ohne therapeutische Vorerfahrung als auch Teilnehmende mit viel therapeutischer Vorerfahrung.</p>
                                 </div>
                             </div>
                         </div>
+
+                          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 itemprop="name">Ist es für mich nicht entspannter, wenn ich nur mit einer anderen Person im</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p itemprop="text">Nein. Offenheit für neue Erfahrungen und die Bereitschaft, sich mit dem eigenen Selbstbild und eigenen Verhaltensmustern auseinanderzusetzen, sind vollkommen ausreichend. Erfahrungsgemäß profitieren in Gruppen sowohl Teilnehmende ohne therapeutische Vorerfahrung als auch Teilnehmende mit viel therapeutischer Vorerfahrung.</p>
+                                </div>
+                            </div>
+                        
 
                         <!-- Organisatorisches & Ablauf -->
                         <h2>Organisatorisches & Ablauf</h2>
                         <div class="notice" style="background-color: #e4f1d9; padding:1em; border-radius:8px;">
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                <h3 itemprop="name">Wie groß ist eine Gruppe und wie läuft eine Sitzung ab?</h3>
+                                <h3 itemprop="name">Wie groß ist eine Gruppe und wie lang dauert eine Gruppensitzung?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Die Gruppen bestehen aus 4–8 Teilnehmenden. Eine Sitzung dauert in der Regel 100 Minuten. Ablauf: Check-in, Gruppengespräch, Übungen, Erfahrungsaustausch, Abschluss-Feedback.</p>
+                                    <p itemprop="text">Die Gruppen bestehen aus 4–8 Teilnehmenden. Eine Sitzung dauert in der Regel 100 Minuten.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Kann ich Gruppentherapie und Einzeltherapie kombinieren?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Ja, in der Regel ist die Kombination möglich. Viele meiner Teilnehmenden nutzen Gruppentherapie zusätzlich zu ihrer Einzeltherapie, um Vorteile beider Formate zu erleben.</p>
+                                    <p itemprop="text">Ja, eine Kombinationsbehandlung ist möglich und sinnvoll. Viele Teilnehmende nutzen Gruppentherapie zusätzlich zu ihrer Einzeltherapie, um Vorteile beider Formate zu kombinieren. Die Einzeltherapie kann bei derselben Therapeutin oder auch bei einer anderen Therapeutin oder einem anderen Therapeuten stattfinden.</p>
                                 </div>
                             </div>
 
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h3 itemprop="name">Wie kann ich mich anmelden?</h3>
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                    <p itemprop="text">Zur Anmeldung oder für ein Vorgespräch kontaktieren Sie mich bitte per E-Mail: <a href="mailto:kontakt@psychotherapie-markull.de">kontakt@psychotherapie-markull.de</a> oder über die Online-Terminvereinbarung.</p>
+                                    <p itemprop="text">Zur Anmeldung oder für ein Vorgespräch kontaktieren Sie mich bitte per E-Mail: <a href="mailto:kontakt@psychotherapie-markull.de">kontakt@psychotherapie-markull.de</a> oder über die 
+                                        
+                                          <a href="https://viewer.epikur-portal.de/praxis/praxis-fuer-psychotherapie---markull"
+                                            class="termin-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                        Online-Terminvereinbarung   </a>
+
+                            (Sie werden auf die Website meines Terminbuchungsanbieters weitergeleitet). <br></p>
                                 </div>
                             </div>
                         </div>
-
-                        <p>Weitere Fragen beantworte ich gern persönlich im Vorgespräch.</p>
-                        <a href="mailto:kontakt@psychotherapie-markull.de" class="button-primary">kontakt@psychotherapie-markull.de</a>
-                         <p>
-                            
-                            Hierfür können Sie 
-                            <a href="https://viewer.epikur-portal.de/praxis/praxis-fuer-psychotherapie---markull"
-                            class="termin-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            online einen Termin vereinbaren
-                            </a>
-
-                            (Sie werden auf die Website meines Terminbuchungsanbieters weitergeleitet). <br>
+                            <br>
+                        <p> <strong>Weitere Fragen beantworte ich gern per Mail oder persönlich im Vorgespräch.</strong> </p>
+                     
 
                     </section>
    
@@ -356,134 +418,54 @@ document.addEventListener('DOMContentLoaded', function() {
                           </p>
                                             </section>
 
-                                        </div>
-                                    </div>
+                                      
 
-</main>
+                    
+        </div> <!-- inner -->
+    </div> <!-- main -->
 
-<!-- Sidebar -->
-<div id="sidebar">
-    <div class="inner">
-        <nav id="menu">
-            <header class="major"><h2>Menü</h2></header>
-            
-            <!-- Obere Menüpunkte -->
-            <ul class="menu-top">
-                <li><a href="#startseite">Startseite</a></li>
-                <li>
-                    <a href="#angebot">Angebot</a>
-                    <ul class="submenu">
-                        <li><a href="#gruppentherapie">Gruppentherapie</a></li>
-                        <li><a href="#einzeltherapie">Einzeltherapie</a></li>
-                        <li><a href="#kombinationsbehandlung">Kombinationsbehandlung</a></li>
-                        <li><a href="#beratung">Beratung</a></li>
-                         <li><a href="#fortbildung">Fortbildung</a></li>
-                    </ul>
-                </li>
-                <li><a href="#kosten">Kosten</a></li>
-                <li><a href="#uebermich">Über mich</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-        
-  <!-- Footer-Menüpunkte (außerhalb von nav/menu) -->
-        <div class="sidebar-footer">
-            <ul>
-                <li><a href="#impressum">Impressum</a></li>
-                <li><a href="#datenschutz">Datenschutz</a></li>
-                <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
-                <li style="font-size: 0,7rem;">©2026 Praxis für Psychotherapie Wiebke Markull. Alle Rechte vorbehalten.</li>
-            </ul>
-        </div>
-    </div>
-</div>
- 
-        </nav>
-    </div>
-</div>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+            <nav id="menu">
+                <header class="major"><h2>Menü</h2></header>
 
-                    </nav>
-                </div>
+                <ul class="menu-top">
+                    <li><a href="#startseite">Startseite</a></li>
+                    <li>
+                        <a href="#angebot">Angebot</a>
+                        <ul class="submenu">
+                            <li><a href="#gruppentherapie">Gruppentherapie</a></li>
+                            <li><a href="#einzeltherapie">Einzeltherapie</a></li>
+                            <li><a href="#kombinationsbehandlung">Kombinationsbehandlung</a></li>
+                            <li><a href="#beratung">Beratung</a></li>
+                            <li><a href="#fortbildung">Fortbildung</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#kosten">Kosten</a></li>
+                    <li><a href="#uebermich">Über mich</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li><a href="#impressum">Impressum</a></li>
+                    <li><a href="#datenschutz">Datenschutz</a></li>
+                    <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
+                    <li style="font-size: 0.7rem;">©2026 Praxis für Psychotherapie Wiebke Markull. Alle Rechte vorbehalten.</li>
+                </ul>
             </div>
         </div>
-     <script src="assets/js/jquery.min.js"></script>
+    </div>
+
+</div> <!-- wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-   <!-- 
-  
-  
-<div id="footer-links" style="text-align:center; margin-top:2em;">
-    <a href="#" id="show-legal" style="color:#888; font-size:0.8em; text-decoration:none;">
-        Impressum & Datenschutz
-    </a>
-</div>
-  
-
-<section id="impressum"> ... </section>
-<section id="datenschutz"> ... </section>
-  
-  
-  <script>
-document.getElementById("show-legal").addEventListener("click", function(e){
-    e.preventDefault();
-    const imp = document.getElementById("impressum");
-    const dat = document.getElementById("datenschutz");
-
-    if (imp.style.display === "block") {
-        imp.style.display = "none";
-        dat.style.display = "none";
-    } else {
-        imp.style.display = "block";
-        dat.style.display = "block";
-        imp.scrollIntoView({ behavior: "smooth" });
-    }
-});
-</script>
-
- <script>
-document.querySelectorAll('.sidebar-footer a').forEach(link => {
-    link.addEventListener('click', function(e){
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target.style.display === 'block'){
-            target.style.display = 'none';
-        } else {
-            target.style.display = 'block';
-            target.scrollIntoView({behavior: 'smooth'});
-        }
-    });
-});
-</script>
-
- 
-
-    <!-- Feste Leiste unten 
-    <div id="footer-bar">
-        <a href="#impressum">Impressum</a> | 
-        <a href="#datenschutz">Datenschutz</a>
-    </div>
-
-
--->
-
-<script>
-document.querySelectorAll('.sidebar-footer a').forEach(link => {
-    link.addEventListener('click', function(e){
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.style.display = 'block';             // Section einblenden
-        target.scrollIntoView({behavior: 'smooth'}); // sanft scrollen
-    });
-});
-</script>
-
-
 </body>
-
-
-
 </html>
-
