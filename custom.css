@@ -758,13 +758,13 @@ h1,h2,h3,h4,h5,h6 {
 /* Toggle für FAQ, damit es ein- und ausgeblendet wird */
 
 
-<style>
   .faq-answer {
-    display: none;
-    margin-top: 0.75em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
   }
   .faq-answer.faq-open {
-    display: block;
+    max-height: 1000px; /* groß genug für jede Antwort */
   }
   .faq-question {
     cursor: pointer;
@@ -783,17 +783,17 @@ h1,h2,h3,h4,h5,h6 {
     flex-shrink: 0;
     margin-left: 1em;
   }
-  .faq-open .faq-arrow {
+  .faq-arrow.faq-open {
     transform: rotate(180deg);
   }
-</style>
 
-<script>
-  document.querySelectorAll('.faq-question').forEach(function(question) {
-    question.addEventListener('click', function() {
-      const answer = this.nextElementSibling;
-      answer.classList.toggle('faq-open');
-      this.querySelector('.faq-arrow').classList.toggle('faq-open');
-    });
-  });
-</script>
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding-top: 0;
+}
+.faq-answer.faq-open {
+  max-height: 1000px;
+  padding-top: 0.75em; /* Abstand hier anpassen */
+}
