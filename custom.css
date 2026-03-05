@@ -753,3 +753,47 @@ h1,h2,h3,h4,h5,h6 {
 .quellen-toggle:hover {
     text-decoration: none;
 }
+
+
+/* Toggle für FAQ, damit es ein- und ausgeblendet wird */
+
+
+<style>
+  .faq-answer {
+    display: none;
+    margin-top: 0.75em;
+  }
+  .faq-answer.faq-open {
+    display: block;
+  }
+  .faq-question {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .faq-question:hover {
+    opacity: 0.8;
+  }
+  .faq-arrow {
+    font-size: 0.8em;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 1em;
+  }
+  .faq-open .faq-arrow {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(question) {
+    question.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      answer.classList.toggle('faq-open');
+      this.querySelector('.faq-arrow').classList.toggle('faq-open');
+    });
+  });
+</script>
