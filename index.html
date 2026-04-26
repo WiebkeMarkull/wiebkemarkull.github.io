@@ -262,9 +262,71 @@ document.addEventListener('DOMContentLoaded', function() {
                             Die Kosten für die ambulante Psychotherapie (Gruppe, Einzel, Kombinationsbehandlung) werden in der Regel von den privaten Krankenkassen sowie von den Beihilfen übernommen. Ich stelle Ihnen die Kosten gemäß Gebührenordnung für Psychotherapeut:innen (GOP) in Rechnung. Da sich die Verträge der Krankenkassen sehr unterscheiden, informieren Sie sich bitte vorab darüber, welche Kosten Ihnen erstattet werden und welche Unterlagen eingereicht werden müssen. Beim Antragsprozedere bin ich Ihnen gern behilflich.
                             </p>
 
-                            <p> <b>Selbstzahlende</b>  <br> 
-                               Es ist ebenso möglich, die Therapie oder Beratung selbst zu finanzieren. Diese Möglichkeit wird in der Regel von Menschen in Anspruch genommen, die noch keine Berufsunfähigkeitsversicherung abgeschlossen haben, auf eine Verbeamtung warten, aus anderen Gründen aktenkundige Diagnosen vermeiden möchten oder die Reglementierung durch den Kostenträger umgehen möchten. <br>
-                            Auch bei Selbstzahlenden richtet sich das Honorar nach der Gebührenordnung für Psychotherapeut:innen (GOP). Die Kosten für eine 50-minütige Einzelsitzung liegen danach je nach Aufwand und zusätzlichen Leistungen zwischen 134,07 Euro und 186,54 Euro (entspricht dem 2,3- bis 3,5-fachen Satz der GOP, einschließlich Zusatzziffern).  </p>
+                         
+  <p>
+    <script>
+function toggleFaq(el) {
+  const answer = el.closest("p").nextElementSibling;
+  answer.classList.toggle("faq-open");
+}
+</script>
+
+<p class="tight-paragraph">
+  <b>Selbstzahlende</b><br>
+  Es ist ebenso möglich, die Therapie oder Beratung selbst zu finanzieren. Diese Möglichkeit wird in der Regel von Menschen in Anspruch genommen, die noch keine Berufsunfähigkeitsversicherung abgeschlossen haben, auf eine Verbeamtung warten, aus anderen Gründen aktenkundige Diagnosen vermeiden möchten oder die Reglementierung durch den Kostenträger umgehen möchten.<br>
+  Auch bei Selbstzahlenden richtet sich das Honorar nach der Gebührenordnung für Psychotherapeut:innen (GOP). Die Kosten für eine 50-minütige Einzelsitzung liegen danach je nach Aufwand und zusätzlichen Leistungen zwischen 134,07 Euro und 186,54 Euro (entspricht dem 2,3- bis 3,5-fachen Satz der GOP, einschließlich Zusatzziffern). Genauere Informationen finden Sie in 
+  <span class="faq-question inline-toggle" onclick="toggleFaq(this)">
+    dieser Tabelle
+  </span>.
+</p>
+
+<div class="faq-answer">
+  <table class="cost-table">
+    <tr>
+      <th>Termin</th>
+      <th>Leistung (GOP)</th>
+      <th>Kosten</th>
+    </tr>
+    <tr>
+      <td>1. – 2.</td>
+      <td>Psychotherapeutische Sprechstunde (2x812a, 2,3-facher Satz)</td>
+      <td>134,06 €</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>
+        Probatorische Sitzung inkl. Erhebung des psychopathologischen Befundes (870 + 801a, 2,3-facher Satz)<br>
+        + testpsychologische Diagnostik (855a, 1,8-facher Satz)
+      </td>
+      <td> 209,82 €<br></td>
+    </tr>
+    <tr>
+      <td>4. – 5.</td>
+      <td>Probatorische Sitzungen inkl. Erhebung des psychopathologischen Befundes (870 + 801a, 2,3-facher Satz)</td>
+      <td>134,07 €</td>
+    </tr>
+    <tr>
+      <td>6. – 29.</td>
+      <td>
+        Kurzzeittherapie  inkl. Erhebung des psychopathologischen Befundes (812a + 801a, 2,3-facher Satz)<br>
+       
+      </td>
+      <td>167,58 €</td>
+    </tr>
+    <tr>
+      <td>ab 30.</td>
+      <td>Langzeittherapie (870 3,0-facher Satz + 801a 2,3-facher Satz)</td>
+      <td>164,67 €</td>
+    </tr>
+  </table>
+
+  <p style="font-size: 1em; margin-top: 0.5em;">
+    Die Abrechnung erfolgt gemäß der Gebührenordnung für Psychotherapeut:innen (GOP). <br>
+    Die angegebenen Beträge basieren auf den aufgeführten Steigerungsfaktoren und gelten für den Regelfall – im Einzelfall können sich Abweichungen ergeben. Steigerungsfaktoren über dem Schwellenwert von 2,3 werden auf Verlangen schriftlich begründet. Selbstzahlende erhalten vor Behandlungsbeginn auf Wunsch einen schriftlichen Kostenvoranschlag.
+  </p>
+</div>
+          </p>              
+                        </p>
                                 
                             <p><b>Gesetzlich Versicherte </b><br> 
                             Da ich aktuell über keinen Kassensitz verfüge, werden die Kosten von den gesetzlichen Krankenkassen nicht übernommen. Bitte wenden Sie sich an die Kolleg:innen mit Kassensitz.</p>

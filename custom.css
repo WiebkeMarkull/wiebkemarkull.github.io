@@ -797,3 +797,16 @@ h1,h2,h3,h4,h5,h6 {
   max-height: 1000px;
   padding-top: 0.75em; /* Abstand hier anpassen */
 }
+
+/* für Ausklappen der Tabelle bei Kosten */
+
+.inline-toggle {
+  display: inline;
+   color: #2a5d9f; /* dunkler als der accent */
+  text-decoration: underline;
+   cursor: pointer;
+}
+
+.tight-paragraph {
+  margin-bottom: 0.5em; /* Standard wäre ~1em */
+}
