@@ -810,3 +810,23 @@ h1,h2,h3,h4,h5,h6 {
 .tight-paragraph {
   margin-bottom: 0.5em; /* Standard wäre ~1em */
 }
+
+/* Aufklappbare "Typische Anlässe" im Abschnitt Beratung
+   -> ans Ende der custom.css anhängen.
+   Nutzt die vorhandenen FAQ-Klassen (.faq-question, .faq-answer, .faq-arrow) */
+
+.anlass-box {
+    background-color: #eef3f7;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+}
+
+.anlass-toggle {
+    font-size: 1em;
+    margin: 0;
+}
+
+.anlass-box .faq-answer p {
+    margin-bottom: 0.3em;
+}

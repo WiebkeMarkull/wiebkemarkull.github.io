@@ -257,26 +257,61 @@ document.addEventListener('DOMContentLoaded', function() {
                          </ul>
                          Sie müssen für ein Beratungsgespräch keine Diagnose mitbringen und keine Erklärung dafür haben, warum Sie kommen. Es reicht, dass etwas Sie beschäftigt – Sie müssen nicht erst selbst herausgefunden haben, was genau es ist.<br><br>
 
-
-
-              <!--           
-                         <p class="notice">
+                                                  <p class="notice">
                            <strong class="section-title">Typische Anlässe</strong>
                          </p>
+ 
+                         <div class="anlass-box">
+                           <h4 class="faq-question anlass-toggle" onclick="toggleAnlass(this)">
+                             Berufliche Neuorientierung
+                             <span class="faq-arrow">▼</span>
+                           </h4>
+                           <div class="faq-answer">
+                             <p>Ob Unzufriedenheit im aktuellen Job, die Frage nach einem Wechsel, Existenzgründung oder die Sorge, sich beruflich verrannt zu haben – ich unterstütze Sie dabei, Klarheit über Ihre Werte, Bedürfnisse und Möglichkeiten zu gewinnen, statt Entscheidungen aus Erschöpfung oder Druck zu treffen.</p>
+                           </div>
+                         </div>
+ 
+                         <div class="anlass-box">
+                           <h4 class="faq-question anlass-toggle" onclick="toggleAnlass(this)">
+                             Trauer
+                             <span class="faq-arrow">▼</span>
+                           </h4>
+                           <div class="faq-answer">
+                             <p>Der Verlust eines nahestehenden Menschen verändert vieles, manchmal leise, manchmal mit voller Wucht. Es gibt kein richtiges Tempo für Trauer und keine Checkliste, die Sie abarbeiten könnten – und auch keinen Zeitpunkt, ab dem &bdquo;es doch eigentlich besser sein müsste&ldquo;. Ich biete Ihnen einen Raum, in dem Sie das, was ist, so sein lassen können wie es ist, in dem Trauer, Wut, Erleichterung oder Leere gleichermaßen Platz haben. Ich begleite Sie dabei, in Ihrem eigenen Tempo, wieder Boden unter den Füßen zu finden.</p>
+                           </div>
+                         </div>
+ 
+                         <div class="anlass-box">
+                           <h4 class="faq-question anlass-toggle" onclick="toggleAnlass(this)">
+                             Orientierung im Leben
+                             <span class="faq-arrow">▼</span>
+                           </h4>
+                           <div class="faq-answer">
+                             <p>Manchmal ist gar nicht das eine große Ereignis der Auslöser, sondern das leise, hartnäckige Gefühl, dass etwas nicht mehr stimmig ist oder noch nie stimmig war – dass Sie funktionieren, aber nicht mehr recht wissen, wofür. Wenn Sie sich fragen, wo Sie gerade stehen, was Ihnen wirklich wichtig ist oder wohin Ihr Weg als Nächstes führen soll, begleite ich Sie dabei, diesen Fragen nachzugehen und Ihr Leben nach dem auszurichten, was Ihnen wirklich wichtig ist.</p>
+                           </div>
+                         </div>
+ 
+                         <div class="anlass-box">
+                           <h4 class="faq-question anlass-toggle" onclick="toggleAnlass(this)">
+                             Lebenskrisen &amp; Belastungssituationen
+                             <span class="faq-arrow">▼</span>
+                           </h4>
+                           <div class="faq-answer">
+                             <p>Darunter fasse ich ganz unterschiedliche Themen: der Umgang mit einer eigenen oder fremden körperlichen Erkrankung, Schwierigkeiten in Partnerschaft oder Familie, das Gefühl, sich in Anpassung an neue Lebensumstände zu verlieren, eine Identitätskrise, in der vieles von dem, was bisher galt, plötzlich infrage steht, schwierige Entscheidungen, die aufgeschoben werden, oder auch der Wunsch, sich selbst und die eigene Biografie besser zu verstehen. Selbstverständlich können Sie mich auch wegen aller anderen Themen ansprechen, die hier nicht explizit genannt werden.</p>
+                           </div>
+                         </div>
+ 
+                         <script>
+                         function toggleAnlass(el) {
+                           el.nextElementSibling.classList.toggle("faq-open");
+                           el.querySelector(".faq-arrow").classList.toggle("faq-open");
+                         }
+                         </script>
+                         <br>
+ 
 
-                         <strong>Berufliche Neuorientierung</strong><br>
-                         Ob Unzufriedenheit im aktuellen Job, die Frage nach einem Wechsel, Existenzgründung oder die Sorge, sich beruflich verrannt zu haben – ich unterstütze Sie dabei, Klarheit über Ihre Werte, Bedürfnisse und Möglichkeiten zu gewinnen, statt Entscheidungen aus Erschöpfung oder Druck zu treffen.<br><br>
 
-                         <strong>Trauer</strong><br>
-                         Der Verlust eines nahestehenden Menschen verändert vieles, manchmal leise, manchmal mit voller Wucht. Es gibt kein richtiges Tempo für Trauer und keine Checkliste, die Sie abarbeiten könnten – und auch keinen Zeitpunkt, ab dem &bdquo;es doch eigentlich besser sein müsste&ldquo;. Ich biete Ihnen einen Raum, in dem Sie das, was ist, so sein lassen können wie es ist, in dem Trauer, Wut, Erleichterung oder Leere gleichermaßen Platz haben. Ich begleite Sie dabei, in Ihrem eigenen Tempo, wieder Boden unter den Füßen zu finden.<br><br>
-
-                         <strong>Orientierung im Leben</strong><br>
-                         Manchmal ist gar nicht das eine große Ereignis der Auslöser, sondern das leise, hartnäckige Gefühl, dass etwas nicht mehr stimmig ist oder noch nie stimmig war – dass Sie funktionieren, aber nicht mehr recht wissen, wofür. Wenn Sie sich fragen, wo Sie gerade stehen, was Ihnen wirklich wichtig ist oder wohin Ihr Weg als Nächstes führen soll, begleite ich Sie dabei, diesen Fragen nachzugehen und Ihr Leben nach dem auszurichten, was Ihnen wirklich wichtig ist.<br><br>
-
-                         <strong>Lebenskrisen &amp; Belastungssituationen</strong><br>
-                         Darunter fasse ich ganz unterschiedliche Themen: der Umgang mit einer eigenen oder fremden körperlichen Erkrankung, Schwierigkeiten in Partnerschaft oder Familie, das Gefühl, sich in Anpassung an neue Lebensumstände zu verlieren, eine Identitätskrise, in der vieles von dem, was bisher galt, plötzlich infrage steht, schwierige Entscheidungen, die aufgeschoben werden, oder auch der Wunsch, sich selbst und die eigene Biografie besser zu verstehen. Selbstverständlich können Sie mich auch wegen aller anderen Themen ansprechen, die hier nicht explizit genannt werden.<br><br>
-   
-   -->
+             
 
 
                          <p class="notice" >
@@ -310,14 +345,14 @@ document.addEventListener('DOMContentLoaded', function() {
                          Wenn Sie finanziell gut aufgestellt sind und sich am oberen Ende der Spanne beteiligen, ermöglichen Sie damit gleichzeitig anderen Menschen den Zugang zu diesem Angebot, die sich Beratung sonst nicht leisten könnten.<br><br>
 
                        
-<!--
+
                          
   <p>
                            Weitere Informationen und Antworten auf häufig gestellte Fragen finden Sie in meinem
                            <a href="/beratung-faq.html"> <strong>FAQ zur Beratung</strong> </a>.
                          </p>
 
--->
+
                        
      </section>
 
@@ -737,7 +772,10 @@ function toggleFaq(el) {
                               </ul>
                         <li><a href="#einzeltherapie">Einzeltherapie</a></li>
                         <li><a href="#kombinationsbehandlung">Kombinationsbehandlung</a></li>
-                        <li><a href="#beratung">Beratung</a></li>
+                       <li><a href="#beratung">Beratung</a></li>
+      <ul class="submenu">
+      <li><a href="/beratung-faq.html">FAQ Beratung</a></li>
+      </ul>
                          <li><a href="#fortbildung">Fortbildung</a></li>
                     
                 </li>
