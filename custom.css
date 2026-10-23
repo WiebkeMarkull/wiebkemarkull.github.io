@@ -838,7 +838,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 0.6em;
     padding: 0.2em 0.75em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.85em;
+       font-size: 1.2em !important;
     font-weight: 400;
     font-style: italic;
     text-transform: lowercase;
@@ -854,6 +854,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #menu a:hover .pwyc-badge {
-    background-color: #a6c5e9;
+    background-color:#eef3f7;
     color: #000;
 }
